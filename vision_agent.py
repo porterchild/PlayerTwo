@@ -63,7 +63,7 @@ def vision_describe(model: str, img: Image.Image) -> str:
     messages: List[Dict[str, Any]] = [
         {
             "role": "user",
-            "content": "Describe this user screenshot with as much detail as you can in 2 or 3 sentences.",
+            "content": "Describe this user screenshot with as much detail as you can in 2 or 3 sentences. Respond only with your description.",
             "images": [img_b64],
         }
     ]
